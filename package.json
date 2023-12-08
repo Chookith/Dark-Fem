@@ -1,0 +1,45 @@
+{
+  "name": "dark-fem-theme",
+  "displayName": "Dark Fem",
+  "description": "Themes for the beautiful and the deadly. Warlike Aphrodite",
+  "publisher": "Chookith",
+  "author": {
+    "name": "Chookith"
+  },
+  "version": "1.5.1",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chookith/Dark-Fem.git"
+  },
+  "homepage": "https://github.com/Chookith/Dark-Fem#readme",
+  "bugs": {
+    "url": "https://github.com/Chookith/Dark-Fem/issues"
+  },
+  "galleryBanner": {
+    "color": "#4e2c17",
+    "theme": "dark"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "Theme",
+    "Dark",
+    "dark",
+    "dark theme",
+    "chookith",
+    "Pink"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dark Fem",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Dark-Fem-color-theme"
+      }
+    ]
+  }
+}

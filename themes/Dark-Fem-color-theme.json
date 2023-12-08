@@ -1,0 +1,7 @@
+{
+    "name": "Dark Fem",
+    "type": "dark",
+    "colors":{
+        "editor.background":"#2B0A1B"
+    }
+}
