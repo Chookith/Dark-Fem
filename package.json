@@ -38,7 +38,7 @@
       {
         "label": "Dark Fem",
         "uiTheme": "vs-dark",
-        "path": "./themes/Dark-Fem-color-theme"
+        "path": "./themes/Dark-Fem-color-theme.json"
       }
     ]
   }
