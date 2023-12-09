@@ -111,6 +111,49 @@
         "banner.background": "#9c2c4e",
     },
     "tokenColors":[
+        
+        //Html start
+        
+        {
+            "name": "Html - tag name",
+            "scope": "entity.name.tag.html",
+            "settings": {
+                "foreground": "#8E0A91",
+                "fontStyle": "italic bold"
+            }
+        },
+        {
+            "name": "Html - tag closers <> </>",
+            "scope": ["punctuation.definition.tag.end.html", "punctuation.definition.tag.begin.html"],
+            "settings": {
+                "foreground": "#c974ca",
+                "fontStyle": "italic bold"
+            }
+        },
+        {
+            "scope": "string.quoted.double.html",
+            "settings": {
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Html - <h>this text</h>",
+            "scope": "text.html.derivative",
+            "settings": {
+                "fontStyle": "italic bold"
+            }
+        },
+        {
+            "name": "Html-- property name",
+            "scope": "entity.other.attribute-name.html",
+            "settings": {
+                "foreground": "#d45b75",
+                "fontStyle": "italic bold"
+            }
+        },
+
+        //css start
+
         {
             "name": "css - colons",
             "scope": ["punctuation.separator.key-value", "punctuation.terminator.rule.css"],
@@ -224,6 +267,46 @@
 
         //Typescript start
 
+        {
+            "scope": "meta.object-literal.key.ts",
+            "settings": {
+                "foreground": "#BC85CA",
+                "fontStyle": "italic bold"
+            }
+        },
+        {
+            "scope": "keyword.control.export.ts",
+            "settings": {
+                "foreground": "#FF0000"
+            }
+        },
+        {
+            "scope": ["keyword.control.import.ts"],
+            "settings": {
+                "foreground": "#82ac97"
+            }
+        },
+        //TypeScriptX start
 
+        //{
+        //    "scope": "keyword.operator",
+        //    "settings": {
+        //        "foreground": "#FF0000"
+        //    }
+        //}
+        //JSON start
+        //JSON w/ comments start
+        //Python start
+        //C start
+        //C++ start
+        //C# start
+        {
+            "scope": ["comment.line.double-slash.cs","punctuation.definition.comment.cs"],
+            "settings": {
+                "foreground": "#581a3a"
+            }
+        }
+        //MarkDown start
+        //SCAD start
     ]
 }
