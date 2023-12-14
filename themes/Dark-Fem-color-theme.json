@@ -34,7 +34,7 @@
     "sideBar.background": "#370413",
     "sideBar.foreground": "#e5bbc8",
     "button.background": "#9c2c4e",
-    "button.secondaryBackground": "#24563a",
+    "button.secondaryBackground": "#4e7b84",
     "widget.shadow": "#480418",
     "icon.foreground": "#df94aa",
     "toolbar.hoverBackground": "#9c2c4e",
@@ -211,8 +211,8 @@
       }
     },
     {
-      "name": "js - if condition",
-      "scope": ["keyword.control.conditional.js"],
+      "name": "js - if while do",
+      "scope": ["keyword.control.conditional.js", "keyword.control.loop.js"],
       "settings": {
         "foreground": "#acd1ff",
         "fontStyle": "italic bold"
@@ -445,6 +445,7 @@
       }
     },
     {
+      "name": "TS - single quote",
       "scope": "string.quoted.single.ts",
       "settings": {
         "foreground": "#a85c05",
@@ -481,6 +482,86 @@
     //JSON start
     //JSON w/ comments start
     //Python start
+
+    {
+      "name": "Python - conditions - if while for",
+      "scope": "keyword.control.flow.python",
+      "settings": {
+        "foreground": "#acd1ff",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Python - smol signs - == > = !",
+      "scope": [
+        "keyword.operator.comparison.python",
+        "keyword.operator.assignment.python",
+        "keyword.operator.logical.python",
+        "punctuation.separator.colon.python"
+      ],
+      "settings": {
+        "foreground": "#ffa928"
+      }
+    },
+    {
+      "name": "Python - function name",
+      "scope": [
+        "entity.name.function.python",
+        "meta.function-call.generic.python",
+        "entity.name.type.class.python"
+      ],
+      "settings": {
+        "foreground": "#C26277",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python - library functions",
+      "scope": "support.function.builtin.python",
+      "settings": {
+        "foreground": "#7595a1",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Python - numbers",
+      "scope": [
+        "constant.numeric.dec.python",
+        "keyword.operator.arithmetic.python"
+      ],
+      "settings": {
+        "foreground": "#f3bfdb",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Python - Double quotes",
+      "scope": "string.quoted.single.python",
+      "settings": {
+        "foreground": "#D18960",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "scope": "storage.type.class.python",
+      "settings": {
+        "foreground": "#82abedcb"
+      }
+    },
+    //{
+    //  "scope": "entity.name.type.class.python",
+    //  "settings": {
+    //    "foreground": "#79BFCDD2",
+    //    "fontStyle": "italic"
+    //  }
+    //},
+    {
+      "name": "Python - comments",
+      "scope": "comment.line.number-sign.python",
+      "settings": {
+        "foreground": "#581a3a"
+      }
+    },
     //C start
     //C++ start
     //C# start
