@@ -109,6 +109,14 @@
         "notifications.foreground": "#e0d3c9",
         "notificationLink.foreground": "#e0d3c9",*/
 
+    //Intergrated Terminal Colours
+    "terminal.foreground": "#FCC8E3",
+    "terminal.border": "#DF94AA",
+    "terminal.ansiGreen": "#9DD2B9E1",
+    "terminal.ansiMagenta": "#C05A86",
+    "terminal.ansiYellow": "#C58F1C",
+    "terminal.ansiCyan": "#ACD1FF",
+
     "banner.background": "#9c2c4e"
   },
   "tokenColors": [
