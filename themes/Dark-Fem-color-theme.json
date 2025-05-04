@@ -99,6 +99,7 @@
     "menu.background": "#9c2c4e",
     "menu.foreground": "#e5bbc8",
     "menu.selectionBackground": "#e5bbc82e",
+    "breadcrumb.foreground": "#DF94AA",
     //inherited attribute
     //"menu.selectionForeground": "#e0d3c9",
     //
@@ -107,6 +108,14 @@
         "notifications.background": "#3a271c",
         "notifications.foreground": "#e0d3c9",
         "notificationLink.foreground": "#e0d3c9",*/
+
+    //Intergrated Terminal Colours
+    "terminal.foreground": "#FCC8E3",
+    "terminal.border": "#DF94AA",
+    "terminal.ansiGreen": "#9DD2B9E1",
+    "terminal.ansiMagenta": "#C05A86",
+    "terminal.ansiYellow": "#C58F1C",
+    "terminal.ansiCyan": "#ACD1FF",
 
     "banner.background": "#9c2c4e"
   },
@@ -810,6 +819,8 @@
     {
       "name": "HexDecimals",
       "scope": "constant.other.color.rgb-value.hex.css",
+      "name": "HexDecimals",
+      "scope": "constant.other.color.rgb-value.hex.css",
       "settings": {
         "foreground": "#f7e4c0",
         "fontStyle": "italic"
@@ -977,7 +988,8 @@
         "comment.line.double-slash.scad"
       ],
       "settings": {
-        "foreground": "#581a3a"
+        "foreground": "#BC85CA",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -1096,6 +1108,9 @@
         "fontStyle": "italic bold"
       }
     },
+
+    //js React start
+
     {
       "name": "TSX - static brackets",
       "scope": [
@@ -1159,7 +1174,7 @@
       "name": "Python - library functions",
       "scope": "support.function.builtin.python",
       "settings": {
-        "foreground": "#7595a1",
+        "foreground": "#E7C397",
         "fontStyle": "italic bold"
       }
     },
@@ -1204,12 +1219,16 @@
     {
       "name": "Markdown (README) - Headings ##",
       "scope": "heading.2.markdown",
+      "name": "Markdown (README) - Headings ##",
+      "scope": "heading.2.markdown",
       "settings": {
         "foreground": "#DF94AA",
         "fontStyle": "italic bold"
       }
     },
     {
+      "name": "Markdown (README) - Headings ###",
+      "scope": "heading.3.markdown",
       "name": "Markdown (README) - Headings ###",
       "scope": "heading.3.markdown",
       "settings": {
@@ -1219,11 +1238,15 @@
     },
     {
       "name": "Markdown (README) - links",
+      "name": "Markdown (README) - links",
       "scope": [
+        "markup.underline.link.image.markdown",
+        "markup.quote.markdown"
         "markup.underline.link.image.markdown",
         "markup.quote.markdown"
       ],
       "settings": {
+        "foreground": "#E0BF81"
         "foreground": "#E0BF81"
       }
     },

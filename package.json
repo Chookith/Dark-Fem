@@ -6,7 +6,7 @@
   "author": {
     "name": "Chookith"
   },
-  "version": "1.5.1",
+  "version": "1.5.2",
   "engines": {
     "vscode": "^1.22.0"
   },
@@ -30,8 +30,15 @@
     "Dark",
     "dark",
     "dark theme",
+    "Dark Theme",
     "chookith",
-    "Pink"
+    "Chookith",
+    "Pink",
+    "pink",
+    "Aphrodite",
+    "aphrodite",
+    "rose",
+    "Rose"
   ],
   "contributes": {
     "themes": [
