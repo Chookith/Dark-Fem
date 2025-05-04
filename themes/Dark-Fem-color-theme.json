@@ -819,8 +819,6 @@
     {
       "name": "HexDecimals",
       "scope": "constant.other.color.rgb-value.hex.css",
-      "name": "HexDecimals",
-      "scope": "constant.other.color.rgb-value.hex.css",
       "settings": {
         "foreground": "#f7e4c0",
         "fontStyle": "italic"
@@ -1219,16 +1217,12 @@
     {
       "name": "Markdown (README) - Headings ##",
       "scope": "heading.2.markdown",
-      "name": "Markdown (README) - Headings ##",
-      "scope": "heading.2.markdown",
       "settings": {
         "foreground": "#DF94AA",
         "fontStyle": "italic bold"
       }
     },
     {
-      "name": "Markdown (README) - Headings ###",
-      "scope": "heading.3.markdown",
       "name": "Markdown (README) - Headings ###",
       "scope": "heading.3.markdown",
       "settings": {
@@ -1238,15 +1232,11 @@
     },
     {
       "name": "Markdown (README) - links",
-      "name": "Markdown (README) - links",
       "scope": [
-        "markup.underline.link.image.markdown",
-        "markup.quote.markdown"
         "markup.underline.link.image.markdown",
         "markup.quote.markdown"
       ],
       "settings": {
-        "foreground": "#E0BF81"
         "foreground": "#E0BF81"
       }
     },
