@@ -111,223 +111,196 @@
     "banner.background": "#9c2c4e"
   },
   "tokenColors": [
-    //Html start
-
     {
-      "name": "Html - tag name",
-      "scope": "entity.name.tag.html",
-      "settings": {
-        "foreground": "#bc4c7c",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "Html - tag closers <> </>",
+      "name": "Boolean - True",
       "scope": [
-        "punctuation.definition.tag.end.html",
-        "punctuation.definition.tag.begin.html"
+        //JS
+        "constant.language.boolean.true.js",
+        //TS
+        "constant.language.boolean.true.ts",
+        //TSX
+        "constant.language.boolean.true.tsx",
+        //Python
+        ///defaults to NULL
+        //Ruby
+        //defaults to Null
+        //C
+        ///defaults to NULL
+        //C++
+        "constant.language.true.cpp",
+        //C#
+        "constant.language.boolean.true.cs",
+        //SCAD
+        "constant.language.boolean.true.scad"
       ],
       "settings": {
-        "foreground": "#c974ca",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "Html - <h>this text</h>",
-      "scope": "text.html.derivative",
-      "settings": {
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "Html - double quote",
-      "scope": "string.quoted.double.html",
-      "settings": {
-        "foreground": "#D18960",
+        "foreground": "#c6c992",
         "fontStyle": "bold"
       }
     },
     {
-      "name": "Html-- property name - class className",
-      "scope": "entity.other.attribute-name.html",
+      "name": "Boolean - False",
+      "scope": [
+        //JS
+        "constant.language.boolean.false.js",
+        //TS
+        "constant.language.boolean.false.ts",
+        //TSX
+        "constant.language.boolean.false.tsx",
+        //Python
+        ///defaults to NULL
+        //Ruby
+        //defaults to Null
+        //C
+        ///defaults to NULL
+        //C++
+        "constant.language.false.cpp",
+        //C#
+        "constant.language.boolean.false.cs"
+      ],
       "settings": {
-        "foreground": "#f2bfca",
+        "foreground": "#8d99af",
         "fontStyle": "bold"
       }
     },
-
-    //css start
-
     {
-      "name": "css - colons",
+      "name": "Boolean - Null",
       "scope": [
-        "punctuation.separator.key-value",
-        "punctuation.terminator.rule.css"
+        //JS
+        "constant.language.null.js",
+        //TS
+        "constant.language.null.ts",
+        //TSX
+        "constant.language.null.tsx",
+        //Python
+        "constant.language.python",
+        //Ruby
+        "constant.language.ruby",
+        "constant.language.nil.ruby",
+        "constant.language.boolean.ruby",
+        //C
+        "constant.language.c",
+        //C++
+        "constant.language.NULL.cpp",
+        //C#
+        "constant.language.null.cs"
       ],
       "settings": {
-        "foreground": "#e4a561"
+        "foreground": "#6A8D73",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "css - var names",
-      "scope": ["entity.other.attribute-name.class", "entity.name.tag.css"],
-      "settings": {
-        "foreground": "#E07088",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "css - a:this-text",
-      "scope": "entity.other.attribute-name.pseudo-class.css",
-      "settings": {
-        "foreground": "#becfd4",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "css - values",
-      "scope": "support.type.property-name.css",
-      "settings": {
-        "foreground": "#bc85ca"
-      }
-    },
-    {
-      "name": "css- commments",
-      "scope": "comment.block.css",
-      "settings": {
-        "foreground": "#581a3a",
-        "fontStyle": "italic"
-      }
-    },
-
-    //JS Start
-
-    {
-      "name": "js - type declaration - var let const",
-      "scope": "storage.type.js",
-      "settings": {
-        "foreground": "#7595a1",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "js - if while do",
-      "scope": ["keyword.control.conditional.js", "keyword.control.loop.js"],
-      "settings": {
-        "foreground": "#acd1ff",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "js - smol symbols and logic symbols - + : . = < && ||",
+      "name": "Import as",
       "scope": [
-        "keyword.operator.relational.js",
-        "keyword.operator.arithmetic.js",
-        "punctuation.accessor.js",
-        "keyword.operator.assignment.js",
-        "keyword.operator.logical.js",
-        "keyword.operator.bitwise.js",
-        "keyword.operator.bitwise.shift.js",
-        "keyword.operator.comparison.js",
-        "keyword.operator.assignment.compound.js"
-      ],
-      "settings": {
-        "foreground": "#ffa928"
-      }
-    },
-    {
-      "name": "js - numbers",
-      "scope": "constant.numeric.decimal.js",
-      "settings": {
-        "foreground": "#f3bfdb"
-      }
-    },
-    {
-      "name": "js - function =>",
-      "scope": ["storage.type.function.js", "storage.type.function.arrow.js"],
-      "settings": {
-        "foreground": "#c6c2fd",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "js - return",
-      "scope": "keyword.control.flow.js",
-      "settings": {
-        "foreground": "#e692ee",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "js - import",
-      "scope": [
-        "keyword.operator.expression.import.js",
-        "keyword.control.import.js"
+        //CSS
+        "keyword.control.at-rule.tailwind.tailwind",
+        //JS
+        "keyword.control.import.js",
+        "keyword.control.as.js",
+        "keyword.control.from.js",
+        //TS
+        "keyword.control.import.ts",
+        "keyword.control.as.ts",
+        "keyword.control.from.ts",
+        //TSX
+        "keyword.control.import.tsx",
+        "keyword.control.as.tsx",
+        "keyword.control.from.tsx",
+        //Python
+        "keyword.control.import.python",
+        //C
+        "keyword.control.directive.include.c",
+        //C++
+        "keyword.other.using.directive.cpp",
+        "keyword.control.directive.include.cpp",
+        //C#
+        "keyword.other.directive.using.cs"
       ],
       "settings": {
         "foreground": "#9dd2b9e1"
       }
     },
     {
-      "name": "js - var's property",
-      "scope": ["variable.other.object.property.js"],
-      "settings": {
-        "foreground": "#cb95f5d0",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "js - var names",
-      "scope": "variable.other.readwrite.js",
-      "settings": {
-        "foreground": "#c26277"
-      }
-    },
-
-    {
-      "name": "js - single quote",
-      "scope": "string.quoted.single.js",
-      "settings": {
-        "foreground": "#a85c05",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "js - double quote",
-      "scope": "string.quoted.double.js",
-      "settings": {
-        "foreground": "#d18960",
-        "fontStyle": "italic bold"
-      }
-    },
-
-    //this is where framework umm
-    //  help?... coloring?   begins.
-    //all of these colors are done on a react repo
-
-    //js React start
-
-    {
-      "name": "js || jsx html attribute - class className message",
-      "scope": "entity.other.attribute-name.js",
-      "settings": {
-        "foreground": "#F2BFCA",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "js - template tags <> </>",
+      "name": "Defining symbols - Terminating statements - accessor - : = |",
       "scope": [
-        "punctuation.definition.tag.begin.js",
-        "punctuation.definition.tag.end.js",
-        "punctuation.definition.tag.begin.js"
+        //CSS - colon
+        "punctuation.separator.key-value",
+        "punctuation.terminator.rule.css",
+        "punctuation.definition.entity.css",
+        "punctuation.separator.list.comma.css",
+        //JS
+        "punctuation.accessor.js",
+        "punctuation.terminator.statement.js",
+        "keyword.operator.assignment.js",
+        "punctuation.separator.comma.js",
+        //TS - defining Symbols - | :
+        "keyword.operator.type.annotation.ts",
+        "keyword.operator.type.ts",
+        "keyword.operator.assignment.ts",
+        "punctuation.accessor.ts",
+        "punctuation.separator.comma.ts",
+        "punctuation.terminator.statement.ts",
+        "keyword.operator.assignment.ts",
+        //TSX  - : ;
+        "keyword.operator.assignment.tsx",
+        "keyword.operator.type.annotation.tsx",
+        "punctuation.terminator.statement.tsx",
+        "punctuation.accessor.tsx",
+        "punctuation.separator.comma.tsx",
+        //JSON
+        "punctuation.separator.dictionary.key-value.json",
+        "punctuation.separator.dictionary.pair.json",
+        "punctuation.separator.array.json",
+        //Python
+        "punctuation.section.function.begin.python",
+        "punctuation.section.class.begin.python",
+        "punctuation.separator.colon.python",
+        "punctuation.separator.annotation.python",
+        "punctuation.separator.period.python",
+        "keyword.operator.assignment.python",
+        "punctuation.separator.parameters.python",
+        "punctuation.separator.element.python",
+        //Ruby
+        "punctuation.separator.method.ruby",
+        "punctuation.separator.object.ruby",
+        "keyword.operator.assignment.ruby",
+        "punctuation.definition.constant.ruby",
+        "punctuation.separator.arguments.ruby",
+        "punctuation.separator.statement.ruby",
+        "punctuation.separator.variable.ruby",
+        //C
+        "punctuation.separator.delimiter.c",
+        "punctuation.terminator.statement.c",
+        "keyword.operator.assignment.c",
+        "punctuation.separator.dot-access.c",
+        "punctuation.separator.colon.case.c",
+        //C++
+        "punctuation.terminator.statement.cpp",
+        "punctuation.separator.dot-access.cpp",
+        "punctuation.separator.label.cpp",
+        "keyword.operator.assignment.cpp",
+        "punctuation.separator.colon.access.control.cpp",
+        "punctuation.separator.colon.case.default.cpp",
+        "punctuation.separator.colon.case.cpp",
+        //C#
+        "punctuation.separator.colon.cs",
+        "punctuation.terminator.statement.cs",
+        "punctuation.accessor.cs",
+        "keyword.operator.assignment.cs",
+        "punctuation.separator.comma.cs",
+        //SQL
+        "keyword.other.DML.sql",
+        //SCAD
+        "keyword.operator.assignment.scad",
+        "punctuation.terminator.statement.scad",
+        "keyword.operator.conditional.scad",
+        "meta.delimiter.object.comma.scad"
       ],
       "settings": {
-        "foreground": "#c974ca",
-        "fontStyle": "italic bold"
+        "foreground": "#FFA928"
       }
     },
-
     {
       "name": "js - template tag name <this stuff>",
       "scope": ["support.class.component.js", "entity.name.tag.js"],
@@ -337,182 +310,849 @@
       }
     },
     {
-      "name": "js - html template - <>this text</>",
-      "scope": "meta.jsx.children.js",
-      "settings": {
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "js - var names",
-      "scope": "variable.other.readwrite.js",
-      "settings": {
-        "fontStyle": ""
-      }
-    },
-    {
-      "name": "js - export",
-      "scope": "keyword.control.export.js",
-      "settings": {
-        "foreground": "#79bfcdd2"
-      }
-    },
-    {
       "scope": "keyword.control.default.js",
       "settings": {
         "foreground": "#82abedcb",
         "fontStyle": "italic"
       }
     },
-
-    ///////////////////////////////////////////////////////////////////////////
-
     {
-      "name": "js - comment",
-      "scope": ["comment.line.double-slash.js", "comment.block.js"],
-      "settings": {
-        "foreground": "#581a3a"
-      }
-    },
-
-    //Typescript start
-
-    {
-      "name": "TS - key",
-      "scope": ["meta.object-literal.key.ts", "variable.object.property.ts"],
-      "settings": {
-        "foreground": "#BC85CA",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "TS - import",
-      "scope": ["keyword.control.import.ts"],
-      "settings": {
-        "foreground": "#9dd2b9e1"
-      }
-    },
-    {
-      "name": "TS - export",
-      "scope": "keyword.control.export.ts",
+      "name": "Export Privacy",
+      "scope": [
+        //JS
+        "keyword.control.export.js",
+        //TS
+        "storage.modifier.ts",
+        "keyword.control.export.ts",
+        //TSX
+        "storage.modifier.tsx",
+        "keyword.control.export.tsx",
+        //ReactJSX
+        "keyword.control.export.js.jsx",
+        //Python
+        "storage.type.function.lambda.python",
+        "storage.modifier.declaration.python",
+        //Ruby
+        "punctuation.definition.variable.ruby",
+        //C
+        ///Nothing
+        //C++
+        "storage.type.modifier.access.control.public.cpp",
+        //C#
+        "storage.modifier.public.cs",
+        "storage.modifier.private.cs",
+        "storage.modifier.protected.cs"
+      ],
       "settings": {
         "foreground": "#79bfcdd2"
       }
     },
     {
-      "name": "TS -class",
-      "scope": ["storage.type.class.ts", "variable.language.this.ts"],
+      "name": "Class",
+      "scope": [
+        //JS
+        "storage.type.class.js",
+        //TS
+        "storage.type.class.ts",
+        //TSX
+        "storage.type.class.tsx",
+        //Python
+        "storage.type.class.python",
+        //Ruby
+        "keyword.control.class.ruby",
+        //C
+        ///I Don't think it has class
+        //C++
+        "storage.type.class.cpp",
+        //C#
+        "storage.type.class.cs"
+      ],
+      "settings": {
+        "foreground": "#a7e4f7f3",
+        "fontStyle": "italic "
+      }
+    },
+    {
+      "name": "Class Name",
+      "scope": [
+        //JS
+        "entity.name.type.class.js",
+        //TS
+        "entity.name.type.class.ts",
+        //TSX
+        "entity.name.type.class.tsx",
+        //Python
+        "entity.name.type.class.python",
+        //Ruby
+        "entity.name.type.class.ruby",
+        //C
+        ///I Don't think it has class
+        //C++
+        "entity.name.type.class.cpp",
+        //C#
+        "entity.name.type.class.cs"
+      ],
       "settings": {
         "foreground": "#82abedcb",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "function keyword",
+      "scope": [
+        //CSS -- let these take function color
+        "entity.other.attribute-name.class",
+        "entity.name.tag.css",
+        //JS
+        "storage.type.function.js",
+        "storage.type.function.arrow.js",
+        //TS
+        "storage.type.function.ts",
+        "storage.type.function.arrow.ts",
+        //TSX
+        "storage.type.function.tsx",
+        "storage.type.function.arrow.tsx",
+        //Python
+        "storage.type.function.python",
+        //Ruby
+        "keyword.control.def.ruby",
+        //C
+        "punctuation.separator.pointer-access.c",
+        //C++
+        ///Nothing
+        //C#
+        ///No keyword
+        "keyword.operator.arrow.cs"
+      ],
+      "settings": {
+        "foreground": "#cdcaf5",
         "fontStyle": "italic"
       }
     },
     {
-      "name": "TS - small signs and logic - : , ; : ",
+      "name": "Function Name",
       "scope": [
-        "keyword.operator.type.annotation.ts",
-        "keyword.operator.assignment.ts",
-        "punctuation.separator.comma.ts",
-        "punctuation.terminator.statement.ts",
-        "punctuation.accessor.ts"
+        //JS
+        "entity.name.function.js",
+        //TS
+        "entity.name.function.ts",
+        //TSX
+        "entity.name.function.tsx",
+        //Python
+        "entity.name.function.python",
+        "entity.name.function.decorator.python",
+        "meta.function-call.generic.python",
+        //Ruby
+        "entity.name.function.ruby",
+        //C
+        "entity.name.function.c",
+        //C++
+        "entity.name.function.definition.cpp",
+        //C#
+        "entity.name.function.cs",
+        //SCAD
+        "entity.name.function.call.scad"
       ],
       "settings": {
-        "foreground": "#ffa928"
+        "foreground": "#ceabf7cb",
+        "fontStyle": "italic bold"
       }
     },
     {
-      "name": "TS - function",
-      "scope": "storage.type.function.arrow.ts",
+      "name": "New and This Keyword",
+      "scope": [
+        //JS
+        "keyword.operator.new.js",
+        "variable.language.this.js",
+        //TS
+        "variable.language.this.ts",
+        "keyword.operator.new.ts",
+        //TSX
+        //Python
+        //Ruby
+        "keyword.other.special-method.ruby",
+        //C
+        //Doesn't exist in C
+        //C++
+        "keyword.operator.new.cpp",
+        "variable.language.this.cpp",
+        //C#
+        "keyword.operator.expression.new.cs",
+        "variable.language.this.cs"
+      ],
+      "settings": {
+        "foreground": "#d14f76ea",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Parameters",
+      "scope": [
+        //JS
+        "variable.parameter.js",
+        //TSX
+        "variable.parameter.tsx",
+        //Python
+        "variable.parameter.function.language.python",
+        "entity.other.inherited-class.python",
+        "meta.function-call.arguments.python",
+        //Ruby
+        "variable.parameter.function.ruby",
+        "meta.function-call.ruby",
+        //C
+        "meta.function.definition.parameters.c",
+        //C++
+        "entity.name.type.parameter.cpp",
+        //C#
+        "entity.name.variable.parameter.cs",
+        //SCAD
+        "meta.function-call.arguments.scad"
+      ],
+      "settings": {
+        "foreground": "#F3BFDB",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Async await",
+      "scope": [
+        //TS
+        "storage.modifier.async.ts",
+        //ReactJSX
+        "storage.modifier.async.js.jsx",
+        //Python
+        "storage.type.function.async.python",
+        //C
+        ///Not Supported
+        //C++
+        //?? Not sure its another libary and i'm not sure who is using it
+        //C#
+        "keyword.other.async.cs",
+        "keyword.other.await.cs"
+      ],
+      "settings": {
+        "foreground": "#ebdfc7e3",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Var Type",
+      "scope": [
+        //JS
+        "storage.type.js",
+        //TS
+        "storage.type.ts",
+        //TSX
+        "storage.type.tsx",
+        //C
+        "storage.type.built-in.primitive.c",
+        "keyword.control.directive.define.c",
+        //C++
+        "storage.type.built-in.primitive.cpp",
+        "storage.type.namespace.directive.cpp",
+        //C#
+        "keyword.type.void.cs",
+        "keyword.type.int.cs",
+        "keyword.type.string.cs",
+        "keyword.type.bool.cs",
+        "storage.type.var.cs",
+        "entity.name.type.cs",
+        "storage.type.namespace.cs",
+        //Python
+        "support.type.python"
+      ],
+      "settings": {
+        "foreground": "#d14f76ea",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Double Quote String",
+      "scope": [
+        //HTML
+        //needs fix
+        //affects other languages
+        //alt will go in anther
+        "meta.attribute.lang.html",
+        "meta.attribute.charset.html",
+        "meta.attribute.content.html",
+        "meta.attribute.http-equiv.html",
+        "meta.attribute.name.html",
+        " meta.attribute.content.html",
+        " meta.attribute.href.html",
+        " meta.attribute.rel.html",
+        "meta.attribute.type.html",
+        " meta.attribute.wrap.html",
+        "meta.attribute.cols.html",
+        "meta.attribute.rows.html",
+        "meta.attribute.id.html",
+        "meta.attribute.placeholder.html",
+        " meta.attribute.lang.html",
+        " meta.attribute.charset.html",
+        "meta.attribute.content.html",
+        "meta.attribute.http-equiv.html",
+        " meta.attribute.name.html",
+        " meta.attribute.content.html",
+        "meta.attribute.href.html",
+        " meta.attribute.rel.html",
+        " meta.attribute.type.html",
+        " meta.attribute.wrap.html",
+        " meta.attribute.cols.html ",
+        "meta.attribute.rows.html",
+        "meta.attribute.id.html",
+        "meta.attribute.placeholder.html",
+        "meta.tag.structure.input.void.html",
+        //CSS
+        "string.quoted.double.css",
+        //JS
+        "string.quoted.double.js",
+        "entity.other.attribute-name.js",
+        //TS
+        "string.quoted.double.ts",
+        //TSX
+        "string.quoted.double.tsx",
+        //Python
+        ///Strings are one and the same for Python
+        //Ruby
+        "string.quoted.double.ruby",
+        "string.quoted.double.interpolated.ruby",
+        //C
+        "string.quoted.double.c",
+        //C++
+        "string.quoted.double.cpp",
+        //C#
+        "string.quoted.double.cs",
+        //SQL
+        "keyword.other.sql",
+        "string.quoted.double.sql"
+      ],
+      "settings": {
+        "foreground": "#f5d2bf",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Single Quote String",
+      "scope": [
+        //js
+        "string.quoted.single.js",
+        //Python
+        //for some reason python considers dbl quote single...
+        "string.quoted.single.python",
+        //Ruby
+        "string.quoted.single.ruby",
+        //TS
+        "string.quoted.single.ts",
+        //TSX
+        "string.quoted.single.tsx",
+        //C
+        "string.quoted.single.c",
+        //C++
+        "string.quoted.double.cpp",
+        //C#
+        "string.quoted.single.cs",
+        //SQL
+        "string.quoted.single.sql"
+      ],
+      "settings": {
+        "foreground": "#f3cd94f8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "`` <- these Quote String - Template Strings?",
+      "scope": [
+        //JS
+        "string.template.js",
+        //TS
+        //?? IDK if this has messed with everything else
+        //"string",
+        //TSX
+        //Python
+        ///Note this is deprecated
+        "invalid.deprecated.backtick.python",
+        //Ruby
+        "string.interpolated.ruby",
+        //C
+        ///Unrecognised by C
+        //C++
+        ///Unrecognised by C++
+        //C#
+        //for whatever reason C# doesn't pick it up
+        //SQL
+        "string.quoted.other.backtick.sql"
+      ],
+      "settings": {
+        "foreground": "#c58f1c",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "If Else While For And",
+      "scope": [
+        //HTML
+        "meta.attribute.for.html",
+        //CSS
+        "entity.name.tag.in.css",
+        "entity.name.tag.to.css",
+        //JS
+        "keyword.control.conditional.js",
+        "keyword.control.loop.js",
+        //Python
+        "keyword.control.flow.python",
+        //Ruby
+        "keyword.control.ruby",
+        "keyword.control.start-block.ruby",
+        //TS
+        "keyword.control.conditional.ts",
+        "keyword.control.loop.ts",
+        //TSX
+        "keyword.control.conditional.tsx",
+        "keyword.control.loop.tsx",
+        //C
+        "keyword.control.c",
+        "keyword.control.case.c",
+        "keyword.control.switch.c",
+        //C++
+        "keyword.control.if.cpp",
+        "keyword.control.else.cpp",
+        "keyword.control.for.cpp",
+        "keyword.control.while.cpp",
+        "keyword.control.do.cpp",
+        "keyword.control.switch.cpp",
+        "keyword.control.case.cpp",
+        "keyword.control.default.cpp",
+        "keyword.control.try.cpp",
+        "keyword.control.catch.cpp",
+        //C#
+        "keyword.control.conditional.if.cs",
+        "keyword.control.conditional.else.cs",
+        "keyword.control.loop.foreach.cs",
+        "keyword.control.loop.for.cs",
+        "keyword.control.loop.in.cs"
+      ],
       "settings": {
         "foreground": "#c6c2fd",
         "fontStyle": "italic bold"
       }
     },
     {
-      "name": "TS - function names",
-      "scope": "variable.other.object.ts",
+      "name": "Return Continue Break",
+      "scope": [
+        //JS
+        "keyword.control.flow.js",
+        //TS
+        "keyword.control.flow.ts",
+        //TSX
+        "keyword.control.flow.tsx",
+        //Python
+        //Ruby
+        "keyword.control.pseudo-method.ruby",
+        //C
+        ///considers return as part of if
+        //C++
+        "keyword.control.return.cpp",
+        "keyword.control.break.cpp",
+        "keyword.control.continue.cpp",
+        "keyword.control.throw.cpp",
+        //C#
+        "keyword.control.flow.return.cs",
+        "keyword.control.flow.break.cs",
+        "keyword.control.flow.continue.cs"
+      ],
       "settings": {
-        "foreground": "#C26277",
+        "foreground": "#ebdfc7",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "numbers",
+      "scope": [
+        //CSS
+        //Needes a fix
+        ///Search : '        //"constant.numeric.css",'
+        //JS
+        "constant.numeric.decimal.js",
+        //TS
+        "constant.numeric.decimal.ts",
+        //TSX
+        "constant.numeric.decimal.tsx",
+        //Python
+        "constant.numeric.dec.python",
+        //Ruby
+        "constant.numeric.integer.ruby",
+        "constant.numeric.ruby",
+        //C
+        "constant.numeric.decimal.c",
+        //C++
+        "constant.numeric.decimal.cpp",
+        //C#
+        "constant.numeric.decimal.cs",
+        //SQL
+        "constant.numeric.sql",
+        //SCAD
+        "constant.numeric.integer.decimal.scad",
+        "constant.numeric.float.scad"
+      ],
+      "settings": {
+        "foreground": "#f3bfdb",
         "fontStyle": "bold"
       }
     },
     {
-      "name": "TS - double quote",
-      "scope": "string.quoted.double.ts",
+      "name": "css - number Fix ",
+      "scope": "constant.numeric.css",
       "settings": {
-        "foreground": "#D18960",
+        "foreground": "#CEABF7CB",
         "fontStyle": "italic bold"
       }
     },
     {
-      "name": "TS - single quote",
-      "scope": "string.quoted.single.ts",
+      "name": "HexDecimals",
+      "scope": "constant.other.color.rgb-value.hex.css",
       "settings": {
-        "foreground": "#a85c05",
-        "fontStyle": "italic bold"
+        "foreground": "#f7e4c0",
+        "fontStyle": "italic"
       }
     },
     {
-      "name": "TS - type declaration",
-      "scope": "storage.type.ts",
-      "settings": {
-        "foreground": "#7595a1",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "TS - comments",
+      "name": "Arithmatic Symbols",
       "scope": [
-        "comment.line.double-slash.ts",
-        "punctuation.definition.comment.ts"
-      ],
-      "settings": {
-        "foreground": "#581a3a"
-      }
-    },
-
-    //TypeScriptX start
-
-    //{
-    //    "scope": "keyword.operator",
-    //    "settings": {
-    //        "foreground": "#FF0000"
-    //    }
-    //}
-    //JSON start
-    //JSON w/ comments start
-    //Python start
-
-    {
-      "name": "Python - conditions - if while for",
-      "scope": "keyword.control.flow.python",
-      "settings": {
-        "foreground": "#acd1ff",
-        "fontStyle": "italic bold"
-      }
-    },
-    {
-      "name": "Python - smol signs - == > = !",
-      "scope": [
-        "keyword.operator.comparison.python",
+        //JS
+        "keyword.operator.assignment.compound.js",
+        "keyword.operator.arithmetic.js",
+        //TS
+        "keyword.operator.increment.ts",
+        "keyword.operator.decrement.ts",
+        "keyword.operator.assignment.compound.ts",
+        "keyword.operator.arithmetic.ts",
+        //TSX
+        "keyword.operator.increment.tsx",
+        "keyword.operator.decrement.tsx",
+        "keyword.operator.assignment.compound.tsx",
+        "keyword.operator.arithmetic.tsx",
+        //Python
         "keyword.operator.assignment.python",
-        "keyword.operator.logical.python",
-        "punctuation.separator.colon.python"
+        "keyword.operator.arithmetic.python",
+        //Ruby
+        "keyword.operator.assignment.augmented.ruby",
+        "keyword.operator.arithmetic.ruby",
+        //C
+        "keyword.operator.assignment.compound.c",
+        "keyword.operator.c",
+        "keyword.operator.increment.c",
+        //C++
+        "keyword.operator.increment.cpp",
+        "keyword.operator.decrement.cpp",
+        "keyword.operator.arithmetic.cpp",
+        "keyword.operator.assignment.compound.cpp",
+        //C#
+        "keyword.operator.assignment.compound.cs",
+        "keyword.operator.increment.cs",
+        "keyword.operator.decrement.cs",
+        "keyword.operator.arithmetic.cs"
       ],
       "settings": {
         "foreground": "#ffa928"
       }
     },
     {
-      "name": "Python - function name",
+      "name": "CSS - General tag",
       "scope": [
-        "entity.name.function.python",
-        "meta.function-call.generic.python",
-        "entity.name.type.class.python"
+        "entity.name.tag.body.css",
+        "entity.name.tag.li.css",
+        "entity.name.tag.a.css",
+        "entity.name.tag.header.css",
+        "entity.name.tag.h1.css",
+        "entity.name.tag.h2.css",
+        "entity.name.tag.h3.css",
+        "entity.name.tag.p.css"
       ],
       "settings": {
-        "foreground": "#C26277",
-        "fontStyle": "italic"
+        "foreground": "#CEABF7CB",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Comparitive Symbols",
+      "scope": [
+        //JS
+        "keyword.operator.logical.js",
+        "keyword.operator.relational.js",
+        "keyword.operator.comparison.js",
+        //TS
+        "keyword.operator.comparison.ts",
+        "keyword.operator.relational.ts",
+        "keyword.operator.logical.ts",
+        //TSX
+        "keyword.operator.comparison.tsx",
+        "keyword.operator.relational.tsx",
+        "keyword.operator.logical.tsx",
+        //Python
+        "keyword.operator.comparison.python",
+        "keyword.operator.logical.python",
+        //Ruby
+        "keyword.operator.comparison.ruby",
+        "keyword.operator.logical.ruby",
+        //C
+        "keyword.operator.comparison.c",
+        "keyword.operator.relational.c",
+        "keyword.operator.logical.c",
+        //C++
+        "keyword.operator.comparison.cpp",
+        "keyword.operator.logical.cpp",
+        "keyword.operator.relational.cpp",
+        //C#
+        "keyword.operator.comparison.cs",
+        "keyword.operator.relational.cs",
+        "keyword.operator.logical.cs",
+        //SQL
+        "keyword.operator.comparison.sql"
+      ],
+      "settings": {
+        "foreground": "#C6C2FD",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS JSON Angular-TS keys",
+      "scope": [
+        //CSS
+        "support.type.property-name.css",
+        //JS
+        "meta.object-literal.key.js",
+        //TS
+        "meta.object-literal.key.ts",
+        "variable.object.property.ts",
+        //TSX
+        "meta.object-literal.key.tsx",
+        "meta.definition.variable.tsx",
+        //JSON
+        "support.type.property-name.json",
+        //Ruby
+        "constant.other.symbol.hashkey.ruby",
+        "constant.language.symbol.hashkey.ruby"
+      ],
+      "settings": {
+        "foreground": "#fdd6ebef",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Comments",
+      "scope": [
+        //HTML
+        "comment.block.html",
+        //CSS
+        "comment.block.css",
+        //JS
+        "comment.line.double-slash.js",
+        "comment.block.js",
+        //TS
+        "punctuation.definition.comment.ts",
+        "comment.block.ts",
+        //TSX
+        "punctuation.definition.comment.tsx",
+        "comment.line.double-slash.tsx",
+        "comment.block.tsx",
+        //JSON
+        "comment.line.double-slash.js",
+        "punctuation.definition.comment.json.comments",
+        //Python
+        "comment.line.number-sign.python",
+        "string.quoted.docstring.multi.python",
+        //Ruby
+        "comment.line.number-sign.ruby",
+        //C
+        "comment.line.double-slash.c",
+        "comment.block.c",
+        //C++
+        "comment.line.double-slash.cpp",
+        "comment.block.cpp",
+        //C#
+        "comment.line.double-slash.cs",
+        "entity.name.tag.localname.cs",
+        "comment.block.documentation.cs",
+        //SCAD
+        "comment.line.double-slash.scad"
+      ],
+      "settings": {
+        "foreground": "#581a3a"
+      }
+    },
+    {
+      "name": "HTML - tags",
+      "scope": [
+        //HTML
+        "entity.name.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "meta.tag.metadata.style.end.html",
+        "punctuation.definition.tag.end.html",
+        //JS
+        "punctuation.definition.tag.begin.js",
+        "entity.name.tag.js",
+        "punctuation.definition.tag.end.js",
+        //TS
+        //Angular at least takes after html
+        //TSX
+        "entity.name.tag.tsx",
+        "punctuation.definition.tag.begin.tsx",
+        "punctuation.definition.tag.end.tsx",
+        //ReactJSX
+        "punctuation.definition.tag.begin.js.jsx",
+        "entity.name.tag.js.jsx",
+        "punctuation.definition.tag.end.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#d14f76ea",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "HTML <h1>This text</h1>",
+      "scope": [
+        "text.html.derivative",
+        "text.html",
+        "meta.jsx.children.tsx",
+        "meta.jsx.children.js.jsx",
+        "meta.jsx.children.js"
+      ],
+      "settings": {
+        "foreground": "#ffc7e2",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "scope": "text.html.markdown",
+      "settings": {
+        "foreground": "#e0d3c9",
+        "fontStyle": ""
+      }
+    },
+    /*
+    not needed css text good
+    {
+      "name": "css - values",
+      "scope": "meta.property-value.css",
+      "settings": {
+        "foreground": ""
+      }
+    }
+      */
+    {
+      "scope": "entity.other.attribute-name.pseudo-element.css",
+      "settings": {
+        "foreground": "#c6ac9c",
+        "fontStyle": "italic bold"
+      }
+    },
+    //JS
+    {
+      "name": "JS - try, catch, finally, this",
+      "scope": ["keyword.control.trycatch.js"],
+      "settings": {
+        "foreground": "#c2eafde5",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "JS - typeof ",
+      "scope": "keyword.operator.expression.typeof.js",
+      "settings": {
+        "foreground": "#c2eafde5",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "TS - reverting due to TS export class keys",
+      "scope": ["meta.definition.property.ts"],
+      "settings": {
+        "foreground": "#df94aa",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "{{ static brackets }}",
+      "scope": ["punctuation.definition.block.ts"],
+      "settings": {
+        "foreground": "#e5ba85",
+        "fontStyle": "bold"
+      }
+    },
+    //TSX  start
+    {
+      "name": "TSX - keys - children:",
+      "scope": "variable.object.property.tsx",
+      "settings": {
+        "foreground": "#c2eafde5",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "TSX - async fix",
+      "scope": "storage.modifier.async.tsx",
+      "settings": {
+        "foreground": "#df94aa",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "TSX - static brackets",
+      "scope": [
+        "punctuation.definition.template-expression.begin.tsx",
+        "punctuation.definition.template-expression.end.tsx"
+      ],
+      "settings": {
+        "foreground": "#D14F76EA",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "TSX - static in templates",
+      "scope": [
+        "meta.embedded.line.tsx",
+        //"variable.other.object.property.tsx",
+        "meta.embedded.line.ruby"
+      ],
+      "settings": {
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "TSX - static html attribute",
+      "scope": ["meta.tag.attributes.tsx"],
+      "settings": {
+        "foreground": "#C6C2FD"
+      }
+    },
+    {
+      "name": "HTML template attribute name",
+      "scope": [
+        //HTML
+        "entity.other.attribute-name.html",
+        //TSX
+        "entity.other.attribute-name.tsx",
+        //React
+        "entity.other.attribute-name.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#DF94AA"
+      }
+    },
+
+    {
+      "name": "pyhton decorator (@commandlistnet)",
+      "scope": "entity.name.function.decorator.python",
+      "settings": {
+        "foreground": "#dcbe94",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Python - __init__",
+      "scope": "support.function.magic.python",
+      "settings": {
+        "foreground": "#c180fed7"
       }
     },
     {
@@ -523,58 +1163,88 @@
         "fontStyle": "italic bold"
       }
     },
+
+    //C start
     {
-      "name": "Python - numbers",
-      "scope": [
-        "constant.numeric.dec.python",
-        "keyword.operator.arithmetic.python"
-      ],
+      "name": "C - <whats being included>",
+      "scope": "string.quoted.other.lt-gt.include.c",
       "settings": {
-        "foreground": "#f3bfdb",
+        "foreground": "#ebc29c",
         "fontStyle": "bold"
       }
     },
     {
-      "name": "Python - Double quotes",
-      "scope": "string.quoted.single.python",
+      "name": "C - %d,%s",
+      "scope": "constant.other.placeholder.c",
       "settings": {
-        "foreground": "#D18960",
+        "foreground": "#7595a1",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "C# - parameters?? '<>' im guessing ",
+      "scope": [
+        "punctuation.definition.typeparameters.begin.cs",
+        "punctuation.definition.typeparameters.end.cs",
+        "string.quoted.other.lt-gt.include.cpp"
+      ],
+      "settings": {
+        "foreground": "#eed8bb",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown (README) - Headings #",
+      "scope": "heading.1.markdown",
+      "settings": {
+        "foreground": "#D14F76EA",
         "fontStyle": "italic bold"
       }
     },
     {
-      "scope": "storage.type.class.python",
+      "name": "Markdown (README) - Headings ##",
+      "scope": "heading.2.markdown",
       "settings": {
-        "foreground": "#82abedcb"
+        "foreground": "#DF94AA",
+        "fontStyle": "italic bold"
       }
     },
-    //{
-    //  "scope": "entity.name.type.class.python",
-    //  "settings": {
-    //    "foreground": "#79BFCDD2",
-    //    "fontStyle": "italic"
-    //  }
-    //},
     {
-      "name": "Python - comments",
-      "scope": "comment.line.number-sign.python",
+      "name": "Markdown (README) - Headings ###",
+      "scope": "heading.3.markdown",
       "settings": {
-        "foreground": "#581a3a"
+        "foreground": "#FFC7E2",
+        "fontStyle": "italic bold"
       }
     },
-    //C start
-    //C++ start
-    //C# start
     {
+      "name": "Markdown (README) - links",
       "scope": [
-        "comment.line.double-slash.cs",
-        "punctuation.definition.comment.cs"
+        "markup.underline.link.image.markdown",
+        "markup.quote.markdown"
       ],
       "settings": {
-        "foreground": "#581a3a"
+        "foreground": "#E0BF81"
+      }
+    },
+    {
+      "name": "Markdown (README) - list",
+      "scope": [
+        "markup.list.numbered.markdown",
+        "punctuation.definition.list.begin.markdown"
+      ],
+      "settings": {
+        "foreground": "#CEABF7CB"
+      }
+    },
+    //OpenScad start
+    {
+      "name": "OpenSCAD - functions",
+      "scope": "meta.function.scad",
+      "settings": {
+        "foreground": "#a6805f",
+        "fontStyle": "italic bold"
       }
     }
-    //MarkDown start
-    //SCAD start
   ]
 }
