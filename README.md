@@ -23,7 +23,7 @@ Okie dokie first and foremost thank you for bringing to my attention that my the
 
 - Fixed the issue with C++ - please let me know if the theme looks odd still :)
 
-![Dark Fem Code Example]
+![Dark Fem Code Example](https://raw.githubusercontent.com/Chookith/Dark-Fem/refs/heads/main/images/Dark-fem-1.6.0.png)
 
 ## Languages Made
 
